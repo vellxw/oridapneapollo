@@ -4,6 +4,7 @@
 let pantalla; // Variable para saber la pantalla actual
 let musica; // Variable para la música
 let click; // Variable para el sonido de clic
+let sonidoDisponible = false; // Controla si los sonidos pudieron cargarse
 let Imagenes = []; // Arreglo donde se guardan las imágenes del juego
 let musicaIniciada = false; // Variable booleana para controlar la música
 
@@ -159,18 +160,26 @@ function mostrarBotonRect(x_, y_, ancho_, alto_) {
 }
 
 function mousePressed() {
-  click.play();
+  if (click) {
+    click.play();
+  }
   
   // Botón de música
   if (pantalla === 0) {
-    if (mouseX > 540 && mouseX < 640 && mouseY > 0 && mouseY < 100) {
+    if (
+      sonidoDisponible &&
+      musica &&
+      mouseX > 540 &&
+      mouseX < 640 &&
+      mouseY > 0 &&
+      mouseY < 100
+    ) {
       if (musica.isPlaying()) {
         // Si está la música, pausarla
         musica.pause();
       } else {
         // Si está pausada, reproducirla
         if (!musicaIniciada) {
-          musica.setVolume(0.2);
           musica.loop();
           musicaIniciada = true;
         } else {
