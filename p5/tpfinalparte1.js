@@ -9,26 +9,26 @@ let musicaIniciada = false; // Variable booleana para controlar la música
 
 function preload() {
   // Sonidos
-  musica = loadSound("./DATA/cancion.mp3");
-  click = loadSound("./DATA/click.mp3");
-  
+  musica = loadSound("./data/cancion.mp3");
+  click = loadSound("./data/click.mp3");
+
   // Imágenes
-  Imagenes[0] = loadImage("./DATA/Imagen0.webp");
-  Imagenes[1] = loadImage("./DATA/Imagen1.webp");
-  Imagenes[2] = loadImage("./DATA/Imagen2.webp");
-  Imagenes[3] = loadImage("./DATA/Imagen3.webp");
-  Imagenes[4] = loadImage("./DATA/Imagen4.webp");
-  Imagenes[5] = loadImage("./DATA/Imagen5.webp");
-  Imagenes[6] = loadImage("./DATA/Imagen6.webp");
-  Imagenes[7] = loadImage("./DATA/Imagen7.webp");
-  Imagenes[8] = loadImage("./DATA/Imagen8.webp");
-  Imagenes[9] = loadImage("./DATA/Imagen9.webp");
-  Imagenes[10] = loadImage("./DATA/imagen10.webp");
-  Imagenes[11] = loadImage("./DATA/Imagen11.webp");
-  Imagenes[12] = loadImage("./DATA/Imagen12.webp");
-  Imagenes[13] = loadImage("./DATA/Imagen13.webp");
-  Imagenes[14] = loadImage("./DATA/Imagen14.webp");
-  Imagenes[15] = loadImage("./DATA/Imagen15.webp");
+  Imagenes[0] = loadImage("./data/Imagen0.webp");
+  Imagenes[1] = loadImage("./data/Imagen1.webp");
+  Imagenes[2] = loadImage("./data/Imagen2.webp");
+  Imagenes[3] = loadImage("./data/Imagen3.webp");
+  Imagenes[4] = loadImage("./data/Imagen4.webp");
+  Imagenes[5] = loadImage("./data/Imagen5.webp");
+  Imagenes[6] = loadImage("./data/Imagen6.webp");
+  Imagenes[7] = loadImage("./data/Imagen7.webp");
+  Imagenes[8] = loadImage("./data/Imagen8.webp");
+  Imagenes[9] = loadImage("./data/Imagen9.webp");
+  Imagenes[10] = loadImage("./data/imagen10.webp");
+  Imagenes[11] = loadImage("./data/Imagen11.webp");
+  Imagenes[12] = loadImage("./data/Imagen12.webp");
+  Imagenes[13] = loadImage("./data/Imagen13.webp");
+  Imagenes[14] = loadImage("./data/Imagen14.webp");
+  Imagenes[15] = loadImage("./data/Imagen15.webp");
 }
 
 function setup() {
