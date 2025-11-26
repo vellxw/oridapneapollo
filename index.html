@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Daphne & Apollo — Aventura gráfica</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Cinzel:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="misestilos.css" />
+  </head>
+
+  <body>
+    <nav class="border fixed split-nav site-header greek-nav">
+      <div class="nav-brand greek-title-small">
+        <h3><a href="#hero">Daphne & Apollo</a></h3>
+      </div>
+
+      <div class="collapsible">
+        <input id="nav-toggle" type="checkbox" name="nav-toggle" />
+        <label for="nav-toggle">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </label>
+        <div class="collapsible-body">
+          <ul class="inline">
+            <li><a href="#tematica">Temática</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#equipo">Equipo</a></li>
+            <li><a href="#aventura">Jugar</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container page-content">
+
+      <section id="hero" class="paper hero-section greek-card hero-animated">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h1 class="hero-title greek-title">Daphne & Apollo</h1>
+            <p class="hero-sub">
+              Una relectura interactiva del mito clásico, donde las elecciones
+              alteran el destino.
+            </p>
+
+            <a href="#aventura" class="btn greek-btn-primary">
+              Comenzar
+            </a>
+          </div>
+
+          <div class="hero-img-box">
+            <img
+              src="Imágenes/cupido.png"
+              class="hero-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="tematica" class="paper section-block greek-card fade-up">
+        <h2 class="greek-subtitle">Temática del proyecto</h2>
+
+        <p>
+          La aventura recrea el mito de Dafne y Apolo: un dios consumido por un
+          amor artificial impuesto por Eros, y una ninfa atravesada por el
+          rechazo provocado por la flecha negra. La obra propone una lectura más
+          contemporánea, donde la libertad, los límites y el consentimiento
+          cobran protagonismo.
+        </p>
+
+        <div class="row">
+          <div class="sm-12 md-6 col">
+            <h4 class="greek-section-title">Relectura del mito</h4>
+            <p>
+              El proyecto resignifica el cuento clásico, destacando la decisión
+              de Dafne de no corresponder un deseo que no siente. Su voluntad es
+              el centro del conflicto.
+            </p>
+          </div>
+
+          <div class="sm-12 md-6 col">
+            <h4 class="greek-section-title">Interactividad</h4>
+            <p>
+              A través de decisiones ramificadas, el jugador acompaña a Apolo:
+              respetar, entender, escuchar… o insistir en una persecución que
+              nunca debió comenzar.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="proceso" class="paper section-block greek-card fade-up">
+        <h2 class="greek-subtitle">Proceso de producción</h2>
+
+        <h4 class="greek-section-title">Nuestro proceso de producción del proyecto:</h4>
+        
+        <div class="row flex-spaces tabs">
+          <input id="tab1" type="radio" name="tabs" checked>
+          <label for="tab1">Investigación</label>
+
+          <input id="tab2" type="radio" name="tabs">
+          <label for="tab2">Guion Interactivo</label>
+
+          <input id="tab3" type="radio" name="tabs">
+          <label for="tab3">Arte Visual</label>
+
+          <input id="tab4" type="radio" name="tabs">
+          <label for="tab4">Programación</label>
+
+          <input id="tab5" type="radio" name="tabs">
+          <label for="tab5">Refinamiento</label>
+
+          <div class="content" id="content1">
+            <p>
+              [Aquí explicá tu proceso de investigación del mito de Dafne y Apolo, qué fuentes consultaste, qué interpretaciones encontraste, etc.]
+            </p>
+          </div>
+
+          <div class="content" id="content2">
+            <p>
+              [Aquí describí cómo definiste las bifurcaciones narrativas, las decisiones que puede tomar el jugador, los diferentes caminos y finales.]
+            </p>
+          </div>
+
+          <div class="content" id="content3">
+            <p>
+              [Aquí contá sobre la selección y composición de imágenes en estilo cómic, qué herramientas usaste, cómo mantuviste la coherencia visual, etc.]
+            </p>
+          </div>
+
+          <div class="content" id="content4">
+            <p>
+              [Aquí explicá el proceso de programación: cómo implementaste las pantallas, los botones, la música, los efectos y los finales. Podés incluir capturas de código si querés.]
+            </p>
+          </div>
+
+          <div class="content" id="content5">
+            <p>
+              [Aquí describí las pruebas que hiciste: de lectura, ritmo, decisiones y claridad. Qué ajustes realizaste después de probar el juego.]
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="equipo" class="paper section-block greek-card fade-up">
+        <h2 class="greek-subtitle">Equipo creativo</h2>
+
+        <div class="row">
+          <div class="sm-12 md-6 col">
+            <div class="card greek-inner-card">
+              <div class="card-body">
+                <h4 class="greek-name">Fiorella Celi</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="sm-12 md-6 col">
+            <div class="card greek-inner-card">
+              <div class="card-body">
+                <h4 class="greek-name">Oriana Betsabé Capurro</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="aventura" class="paper section-block greek-card fade-up">
+        <h2 class="greek-subtitle">Aventura gráfica</h2>
+
+        <p>
+          A continuación podés jugar la aventura completa: música, decisiones y
+          múltiples finales según tus elecciones.
+        </p>
+
+        <div id="game-container" class="game-frame greek-game">
+          <iframe src="p5/index.html" frameborder="0" width="100%" height="600"></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="paper footer-block greek-footer">
+      <p>Trabajo Final - Daphne & Apollo</p>
+    </footer>
+  </body>
+</html>
