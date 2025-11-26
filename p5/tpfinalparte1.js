@@ -9,6 +9,10 @@ let Imagenes = []; // Arreglo donde se guardan las imágenes del juego
 let musicaIniciada = false; // Variable booleana para controlar la música
 
 function preload() {
+  // Sonidos
+  musica = loadSound("./data/cancion.mp3");
+  click = loadSound("./data/click.mp3");
+
   // Imágenes
   Imagenes[0] = loadImage("./data/Imagen0.webp");
   Imagenes[1] = loadImage("./data/Imagen1.webp");
@@ -30,34 +34,9 @@ function preload() {
 
 function setup() {
   createCanvas(640, 480);
-
-  // Cargar los sonidos sin bloquear el inicio del juego (especialmente en Edge)
-  soundFormats("mp3");
-  loadSound(
-    "./data/cancion.mp3",
-    (buffer) => {
-      musica = buffer;
-      musica.setVolume(0.2);
-      sonidoDisponible = true;
-    },
-    () => {
-      musica = null;
-    }
-  );
-
-  loadSound(
-    "./data/click.mp3",
-    (buffer) => {
-      click = buffer;
-    },
-    () => {
-      click = null;
-    }
-  );
-
   // Valor inicial de la pantalla
   pantalla = 0;
-}
+} 
 
 function draw() {
   background(137, 206, 140);
